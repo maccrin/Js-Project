@@ -11,23 +11,46 @@
       <form id="form">
         <div class="form-group">
           <label for="name">Full Name</label>
-          <input type="text" id="name" placeholder="Full Name" />
+          <input
+            type="text"
+            id="name"
+            placeholder="Full Name"
+            required
+            minlength="3"
+            maxlength="100"
+          />
         </div>
         <div class="form-group">
           <label for="phone">Phone Number</label>
-          <input type="tell" id="phone" placeholder="6666-666-6666" />
+          <input
+            type="tell"
+            id="phone"
+            placeholder="6666-666-6666"
+            required
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          />
         </div>
         <div class="form-group">
           <label for="email">Email Adress</label>
-          <input type="email" id="email" placeholder="email@address.com" />
+          <input
+            type="email"
+            id="email"
+            placeholder="email@address.com"
+            required
+          />
         </div>
         <div class="form-group">
           <label for="website">Website Url</label>
-          <input type="url" id="website" placeholder="Website" />
+          <input type="url" id="website" placeholder="Website" required />
         </div>
         <div class="form-group">
           <label for="password1">Password</label>
-          <input type="password" id="password1" placeholder="Create Password" />
+          <input
+            type="password"
+            id="password1"
+            placeholder="Create Password"
+            required
+          />
         </div>
         <div class="form-group">
           <label for="password2"> Confirm Password</label>
@@ -35,6 +58,7 @@
             type="password"
             id="password2"
             placeholder="Confirm Password"
+            required
           />
         </div>
         <button type="submit">Register</button>
